@@ -88,7 +88,7 @@ app.post('/usage-end', cors(), function(req, res) {
     res.end();
 });
 
-http.listen(process.env.PORT || 3000, function(){
+http.listen(process.env.PORT || 8080, function(){
     console.log('listening on port:' + (process.env.PORT || 3000));
 });
 
