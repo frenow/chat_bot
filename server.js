@@ -88,8 +88,8 @@ app.post('/usage-end', cors(), function(req, res) {
     res.end();
 });
 
-http.listen(process.env.PORT || 80, function(){
-    console.log('listening on port:' + (process.env.PORT || 3000));
+http.listen(process.env.PORT || 8443, function(){
+    console.log('listening on port:' + (process.env.PORT || 8443));
 });
 
 app.get("/.well-known/acme-challenge/:content", (req, res) => {
